@@ -1,2 +1,2 @@
-# jb-SMU06-WeatherDashboard
-jb-SMU06-WeatherDashboard
+# 06-Weather Dashboard API Management
+
