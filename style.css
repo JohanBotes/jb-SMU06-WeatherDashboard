@@ -1,0 +1,298 @@
+/* add default's to weppage */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* used to help determine layout */
+.border {
+    border: 1px solid black;
+}
+
+.spacebetween{
+    justify-content: space-around;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+}
+
+.col1 {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.col2 {
+    width: 65%;
+    margin-right: auto;
+    margin-top: 1%;
+}
+
+.col3 {
+    width: 18%;
+    
+}
+
+
+/* make body full page size depending on viewport */
+body { min-height: 100vh; }
+
+/* style the header */
+header {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    background-color: #316179;
+    
+}
+
+
+/* style the heading */
+.heading {
+    color:white;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+/* style the h1 */
+.h1 {
+    font-weight: bold;
+    font-size: 3.25rem;
+    margin: 2rem auto;
+}
+/* style the h2 */
+h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-left: 1%;
+}
+
+/* style the text area where user inputs city name */
+#city {
+    font-size: 2rem;
+    width: 100%;
+    border-radius: .4rem;
+    border: .1rem solid black;
+    height: 4.5rem;
+    padding-bottom: .5rem;
+    padding-top: 0px;
+    padding-left: .5rem;
+}
+
+/* style the search button */
+#search-btn {
+    margin-bottom: 2rem;
+    background-color: #316179;
+    color: white;
+}
+
+/* style the history buttons */
+.btn {
+    font-size: 2rem;
+    width: 100%;
+    background-color: lightgrey;
+    color: black;
+    border: none;
+    border-radius: .4rem;
+    margin-top: 2rem;
+    padding: .7rem 0;
+}
+
+/* create the line break in search area */
+hr {
+    border-top: .2rem solid rgba(0,0,0, 1);
+}
+
+/* style current weather container */
+#current-weather {
+    height: 50%;
+    border: .1rem solid #13475f;
+    background-color: rgb(220, 238, 244);
+}
+
+/* style the list in weather container */
+ul {
+    list-style-type: none;
+    font-size: 3rem;
+    font-weight: bold;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 1%;
+}
+
+/* style the icon */
+#current-weather-icon {
+    filter: drop-shadow(0 0 0.75rem grey);
+}
+
+/* style the uv index background */
+.favorable {
+    background-color: green;
+    font-size: 2rem;
+    border-radius: .5rem;
+}
+
+.moderate {
+    background-color: yellow;
+    font-size: 2rem;
+    border-radius: .5rem;
+}
+
+.severe {
+    background-color: red;
+    font-size: 2rem;
+    border-radius: .5rem;
+}
+
+/* add padding to the index on UVindex value */
+span {
+    padding: 0 1.5rem;
+    color: white;
+} */
+
+/* style the h3 header */
+h3 {
+    font-weight: bold;
+    font-size: 2rem;
+    color: white;
+}
+
+/* style the .card-body */
+.card-body {
+    background-color:#316179;
+    height: 20rem;
+    padding-left: 4%;
+    padding-top: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.card-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    font-size: 17px;
+}
+
+.card-text {
+    font-size: 15px;
+}
+
+/* style the weather details in the .card-body */
+p {
+    font-size: 2rem;
+    color: white;
+}
+
+/* style the five-day-header */
+#five-day-header {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1144px) {
+    
+    .col1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    #city-search, hr, .btn {
+        width: 30rem;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+
+    #city {
+        text-align: center;
+    }
+
+    #search-history {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #search-btn {
+        width: 100%;
+        margin-top: 2rem;
+        margin-bottom: 0;
+    }
+
+    .col2 {
+        width: 100%;
+    }
+
+    .col3 {
+        width: 100%;
+    }
+
+    #current-weather {
+        height: 20%;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 2rem;
+        width: 500px;
+    }
+
+    h2 {
+        justify-content: center;
+    }
+
+    .card-body {
+        background-color: #316179;
+        height: 20rem;
+        padding-left: 0;
+        padding-top: 1%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 20rem;
+        margin: .5rem auto;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    .col1 {
+        width: 100%;
+    }
+
+    .col2 {
+        width: 100%;
+    }
+
+    .col3 {
+        width: 100%;
+    }
+
+}
+
+/* // Small devices (landscape phones, 630px and up) */
+@media (max-width: 630px) {
+
+    #current-weather {
+        width: 300px;
+    }
+
+}

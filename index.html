@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='./style.css'>
+    <title>Weather Dashboard</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="heading">Weather Dashboard</header>
+
+    <main id='container' class="container">
+        <div class="row">
+            <!-- search city area -->
+            <div class="col1">
+                <div id='search-area'>
+                    <h1 class='h1'>Choose a City:</h1>
+                    <form id='city-search'>
+                        <input name='city' type="text" placeholder="Dallas" id='city' autofocus='true'
+                            class='city-input' />
+                        <button type="submit" id='search-btn' class='btn'>Search</button>
+                    </form>
+                    <!-- line break -->
+                    <hr>
+                    </hr>
+                    <!-- div that holds cities already searched in local storage -->
+                    <div id="search-history"></div>
+                </div>
+            </div>
+            <!-- container that holds the current weather and 5 day forecast -->
+            <div class="col2">
+                <div id='five-day' class='row spacebetween'></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src='./script.js'></script>
+
+</body>
+
+</html>
