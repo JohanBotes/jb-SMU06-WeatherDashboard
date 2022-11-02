@@ -25,3 +25,4 @@ GIVEN a weather dashboard with form inputs
 
 ## Image
 
+![Weather Dashboard](https://github.com/JohanBotes/jb-SMU06-WeatherDashboard/blob/main/WeatherDashBoard.png)
