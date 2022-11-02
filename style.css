@@ -9,7 +9,8 @@
 
 /* used to help determine layout */
 .border {
-    border: 1px solid black;
+    border: 1px solid #2b3d7b;
+    border-radius: 5px;
 }
 
 .spacebetween{
@@ -30,16 +31,19 @@
 .col1 {
     width: 20%;
     margin: 0 auto;
+    border-radius: 5px;
 }
 
 .col2 {
     width: 65%;
     margin-right: auto;
     margin-top: 1%;
+    border-radius: 5px;
 }
 
 .col3 {
     width: 18%;
+    border-radius: 5px;
     
 }
 
@@ -52,7 +56,7 @@ header {
     text-align: center;
     padding-top: 5px;
     padding-bottom: 10px;
-    background-color: #316179;
+    background-color: #2b3d7b;
     
 }
 
@@ -94,7 +98,7 @@ h2 {
 /* style the search button */
 #search-btn {
     margin-bottom: 2rem;
-    background-color: #316179;
+    background-color: #2b3d7b;
     color: white;
 }
 
@@ -118,8 +122,10 @@ hr {
 /* style current weather container */
 #current-weather {
     height: 50%;
-    border: .1rem solid #13475f;
-    background-color: rgb(220, 238, 244);
+    border: .1rem solid #2b3d7b;
+    background-color: lightgrey;
+    border-radius: 5px;
+    margin-top: 10px;
 }
 
 /* style the list in weather container */
@@ -173,7 +179,7 @@ h3 {
 
 /* style the .card-body */
 .card-body {
-    background-color:#316179;
+    background-color:#2b3d7b;
     height: 20rem;
     padding-left: 4%;
     padding-top: 4%;
@@ -181,6 +187,7 @@ h3 {
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-around;
+    border-radius: 5px;
 }
 
 .card-title {
@@ -202,8 +209,8 @@ p {
 
 /* style the five-day-header */
 #five-day-header {
-    margin-top: 1%;
-    margin-bottom: 1%;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
@@ -237,10 +244,12 @@ p {
 
     .col2 {
         width: 100%;
+        border-radius: 5px;
     }
 
     .col3 {
         width: 100%;
+        border-radius: 5px;
     }
 
     #current-weather {
@@ -249,6 +258,7 @@ p {
         text-align: center;
         margin-top: 2rem;
         width: 500px;
+        border-radius: 5px;
     }
 
     h2 {
@@ -256,7 +266,7 @@ p {
     }
 
     .card-body {
-        background-color: #316179;
+        background-color: #2b3d7b;
         height: 20rem;
         padding-left: 0;
         padding-top: 1%;
@@ -266,6 +276,7 @@ p {
         justify-content: space-around;
         width: 20rem;
         margin: .5rem auto;
+        border-radius: 5px;
     }
 }
 

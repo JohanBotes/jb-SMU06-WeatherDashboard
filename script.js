@@ -110,7 +110,7 @@ function getWeather(city) {
                                     //create list of current weather details
                                     let currWeatherListEl = $('<ul>')
 
-                                    var currWeatherDetails = ['Temp: ' + weatherData.current.temp + ' °F', 'Wind: ' + weatherData.current.wind_speed + ' MPH', 'Humidity: ' + weatherData.current.humidity + '%']
+                                    let currWeatherDetails = ['Temp: ' + weatherData.current.temp + ' °F', 'Wind: ' + weatherData.current.wind_speed + ' mph', 'Humidity: ' + weatherData.current.humidity + '%']
 
                                     for (let i = 0; i < currWeatherDetails.length; i++) {
                                         //create an indiviual list item and append to ul
@@ -204,7 +204,7 @@ function getWeather(city) {
                                             });
 
                                         // create card text displaying weather details
-                                        let currWeatherDetails = ['Temp: ' + weatherData.current.temp + ' °F', 'Wind: ' + weatherData.current.wind_speed + ' MPH', 'Humidity: ' + weatherData.current.humidity + '%', 'UV Index: ' + weatherData.current.uvi]
+                                        let currWeatherDetails = ['Temp: ' + weatherData.current.temp + ' °F', 'Wind: ' + weatherData.current.wind_speed + ' mph', 'Humidity: ' + weatherData.current.humidity + ' %', 'UV Index: ' + weatherData.current.uvi]
                                         //create temp
                                         let tempEL = $('<p>')
                                             .addClass('card-text')
@@ -212,7 +212,7 @@ function getWeather(city) {
                                         //create wind
                                         let windEL = $('<p>')
                                             .addClass('card-text')
-                                            .text('Wind: ' + weatherData.daily[i].wind_speed + ' MPH')
+                                            .text('Wind: ' + weatherData.daily[i].wind_speed + ' mph')
                                         // create humidity
                                         let humidityEL = $('<p>')
                                             .addClass('card-text')
